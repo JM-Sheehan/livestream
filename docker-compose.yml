@@ -7,10 +7,10 @@ services:
       - "8080:8080"
     container_name: rtmp_server
     volumes:
-      {
+      [
         ./data:/tmp/hls,
         ./data:/tmp/dash
-      }
+      ]
 
   auth:
     build: ./auth
